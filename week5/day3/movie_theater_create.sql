@@ -4,7 +4,7 @@ CREATE TABLE employee (
     lname VARCHAR(50),
     phone VARCHAR(20),
     email VARCHAR(80),
-    schedule DATE
+    schedule VARCHAR(10)
 );
 
 CREATE TABLE concession (
