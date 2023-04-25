@@ -4,7 +4,7 @@ the list and checks that the current name is in the string passed in. The output
 "Matched dog_name" if name is in the string, if no matches are present console.log "No Matches"
 */
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
-let dog_names = ["Max","HAS","PuRple","Dog", "Hello"] // <-- added some extra elements 
+let dog_names = ["max","HAS","PuRple","dog", "hello"] // <-- added some extra elements 
 
 function findWords(dstr, darr) {
     let matchedNames = []
@@ -13,11 +13,13 @@ function findWords(dstr, darr) {
             matchedNames.push(darr[i])
         }
     } if (matchedNames.length > 0) {
-        return 'Matched '+matchedNames.join(', ') // returning the output
+        console.log('Matched '+matchedNames.join(', '))
+        return 'Matched '+matchedNames.join(', ')
     } else {
-        console.log('No Matches') // console.log needs no return, follwed instruction
+        console.log('No Matches')
+        return 'No Matches'
     }
-} findWords(dog_string, dog_names) // console.log result = 'Matched Max, Dog, Hello'
+} findWords(dog_string, dog_names)
 
 // Experimenting: found out you can turn functions into expressions and pass parameters anonymously
 console.log(function findWords2(dstr, darr) {
@@ -27,9 +29,9 @@ console.log(function findWords2(dstr, darr) {
             matchedNames.push(darr[i])
         }
     } if (matchedNames.length > 0) {
-        return 'Matched '+matchedNames.join(', ') // returning the output
+        return 'Matched '+matchedNames.join(', ')
     } else {
-        console.log('No Matches') // console.log needs no return, follwed instruction
+        return 'No Matches'
     }
 }(dog_string, dog_names))
 
