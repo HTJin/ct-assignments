@@ -4,7 +4,7 @@ the list and checks that the current name is in the string passed in. The output
 "Matched dog_name" if name is in the string, if no matches are present console.log "No Matches"
 */
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
-let dog_names = ["max","HAS","PuRple","dog", "hello"] // <-- added some extra elements 
+let dog_names = ["Max","HAS","PuRple","Dog", "Hello"] // <-- added some extra elements 
 
 function findWords(dstr, darr) {
     let matchedNames = []
