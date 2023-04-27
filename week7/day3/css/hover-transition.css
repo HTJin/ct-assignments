@@ -19,11 +19,3 @@
     transform: translateX(1rem);
     transition: opacity 500ms, transform 500ms;
 }
-
-.position-number-animation {
-    transition: color 500ms;
-}
-
-.position-number-animation.active {
-    color: red;
-}
